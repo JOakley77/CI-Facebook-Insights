@@ -1,7 +1,9 @@
 Codeigniter Library to easily connect to Facebook to grab Insights data for Canvas Apps.
 
-MySQL Table
+Note: You can get basic Insights data for any FB app regardless of your role. If you want actual detailed statistics make sure either you're an admin or have access to FB Insights for that app.
 
+MySQL Table
+-----------------------------------------------------------
 CREATE TABLE `facebook_insights` (
   `id` int(15) NOT NULL AUTO_INCREMENT,
   `date_from` date NOT NULL,
