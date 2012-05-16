@@ -30,8 +30,6 @@ class Insights {
 		}
 	}
 
-	public function __deconstruct() {}
-
 	public function authorize_insights() {
 		try {
 			$this->token 	= $this->get_access_token($this->fb_app_redirect_uri);
