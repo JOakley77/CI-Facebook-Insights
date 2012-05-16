@@ -1,1 +1,14 @@
 Codeigniter Library to easily connect to Facebook to grab Insights data for Canvas Apps.
+
+MySQL Table
+
+CREATE TABLE `facebook_insights` (
+  `id` int(15) NOT NULL AUTO_INCREMENT,
+  `date_from` date NOT NULL,
+  `date_until` date NOT NULL,
+  `serialized_data` longtext NOT NULL,
+  `cached_at` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_date_from` (`date_from`) USING BTREE,
+  KEY `idx_date_until` (`date_until`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
